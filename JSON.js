@@ -35,9 +35,21 @@ var rss = {
 }
 //create script.js
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "rss.json.min.txt", true);
-xhr.onreadystatechange = function(){
-     
+
+xhr.open("POST", "rss.json.min.txt", true);
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+        var status = xhr.status;
+
+        if ((status >= 200 & status < 300) status === 304) {
+            var rss = JSON.parse(xhr.responseText);
+            alert(xhr.responseText);
+        }
+    }
+};
+xhr.send(null);
 
 
 
