@@ -1,0 +1,121 @@
+/*
+//Step 1.
+
+//generating unique ID
+
+var i = 0;
+
+//function that return a string and the concat a number. the increment that will always be unique
+
+function nameGen() {
+  var name = "customerName" + i;
+  i=i+1;
+  return name;
+}
+
+var name = nameGen();
+var name2 = nameGen();
+
+alert(name + " " + name2);
+*/
+
+//immidate invoked function that is immidately invoked (anon function gets executed and that protected
+//inside of the function box from any outside of the function)
+//to avoid name collision we need to create a variable that will execute a anon. self-envoking function
+//then return the value of utility object
+
+var utility = (function() {
+var i = 0;
+  
+ //add object notation
+  return { 
+    nameGen: function() {
+        var name = "customName" + i;
+                      i = i + 1;
+                    return name;
+    }
+  }
+
+ 
+}());
+
+
+/* needs to be rewritten 
+function nameGen() {
+  var name = "customName" + i;
+  i = i + 1;
+  return name;
+  }
+*/
+
+//now instead of using 
+//var name = nameGen();
+//var name2 = nameGen();
+//we need to use var name = nameFunction.nameGen(), and var name2 = nameFunction.nameGen();
+
+var name = utility.nameGen(),
+    name2 = utility.nameGen();
+    
+    
+    
+    
+ --------------------------------------------------------------------------
+COMPLETE CODE
+
+var utility = (function() {
+  var i = 0;
+  return {
+
+    nameGen: function() {
+      var name = "customName" + i;
+      i = i + 1;
+      return name;
+    }
+  }
+}());
+
+var name = utility.nameGen(),
+name2 = utility.nameGen();
+alert (name + " " + name2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
