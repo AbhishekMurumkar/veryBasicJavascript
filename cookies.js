@@ -5,11 +5,22 @@ var person = {
 };
 
 localStorage.person = JSON.stringify(person);
+//var personObj=JSON.parse(localStorage.person);
+//alert (personObj.firstName+ " " + personObj.lastName);
+//localStorage.clear();
+
+
+// this goes into another js file.
+
 var personObj=JSON.parse(localStorage.person);
 alert (personObj.firstName+ " " + personObj.lastName);
-localStorage.clear();
 
+//html file
+<a href = "index2.html"> Click me </a>
+<script src = "script.js"> </script>
 
+//2nd file index2.html
+<script src = "script2.js"> </script>
 
 
 
