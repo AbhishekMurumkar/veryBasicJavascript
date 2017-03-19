@@ -1,0 +1,5 @@
+var value = Math.min(56, 88, 90, 900, 232);
+alert(value);
+
+var value1 = Math.max(56, 88, 90, 900, 232);
+alert(value1);
