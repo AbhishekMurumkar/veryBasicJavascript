@@ -61,3 +61,16 @@ function doSomething(value, index, array) {
 fruit.forEach(doSomething);
 //alerts each fruit individually
 
+
+//mapping
+var fruit = ["oranges", "kiwi", "bananas", "apples", "pears", "cherries", "bananas"];
+
+function doSomething(value, index, array) {
+  return " I like " + value;
+}
+var resultFruits = fruit.map(doSomething);
+ alert (fruit);
+alert (resultFruits);
+//alerts a list of array
+//2nd popup I like concats each individually
+
