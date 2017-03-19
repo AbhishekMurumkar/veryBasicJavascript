@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Javaascript </title>
+</head>
+<h1> Multidimensional Array </h1>
+<body>
+
+<p> I want to access Alexandre Dumas' novel "the Black Tulip". </p>
+<p> Authors variable has Alexandre Dumas as 1st string since JulesVerne's variable is 0.</p>
+<p>Now, The Black Tulip is 2nd object in alexandreDumas array. </p>
+
+<h3> document.getElementById("blackTulip").innerHTML =(myDesk [1] [1] [2]);</h3>
+<p id="blackTulip"> </p>
+
+
+<script>
+var julesVerne = ["The Steam House ", "Around the World in Eighty Days ", "The Vanished Diamond "];
+var alexandreDumas =["Catherine Blum ", "Robin Hood ", "The Black Tulip "];
+var hansAndersen = ["The Chrysanthemum Robe","Daughter of the Forest","The Snow Queen","The Real Princess"];
+
+
+var authors = [julesVerne, alexandreDumas, hansAndersen];
+document.write (authors [1][1]);
+
+var myDesk = ["couch", authors, "TV"];
+document.getElementById("blackTulip").style.color = "purple";
+document.getElementById("blackTulip").innerHTML =(myDesk [1] [1] [2]);
+
+</script>
+</body>
+</html>

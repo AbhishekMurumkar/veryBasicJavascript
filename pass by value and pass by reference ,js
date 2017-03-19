@@ -1,0 +1,29 @@
+//pass by reference
+
+function changeObject (d) {
+  d.prop1 = function () {
+    console.log ("hello from Mars");
+  };
+  d.prop2 = function () {
+    console.log ("hello from Venus");
+  };
+}
+
+var c = {function () { console.log ("hello from Jupiter"); } };
+c.prop1 = {function () { console.log ("hello from Pluto"); } };
+changeObject(c);
+console.log(c);
+console.log(changeObject);
+
+
+//pass by value
+
+function change(b) {
+  b=3;
+  console.log(b);
+}
+var a = 1; 
+change(a);
+console.log(a);
+change(b);
+console.log(b);

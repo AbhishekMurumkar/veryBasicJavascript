@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Javaascript </title>
+</head>
+<h1> Splice() </h1>
+
+<style>
+ul {
+    list-style-position: inside;
+	font-size: 15px;
+	color: green;
+}
+
+p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+	    margin-left: 70px;
+}
+</style>
+
+<body>
+
+<p id="books"> </p>
+
+<ul id="dumas">
+<il>
+</il> </ul>
+
+<script>
+var julesVerne = ["The Steam House ", " Around the World in Eighty Days ", " The Vanished Diamond "];
+var alexandreDumas =[" Catherine Blum ", " Robin Hood ", "The Black Tulip "];
+var hansAndersen = [" The Chrysanthemum Robe "," Daughter of the Forest "," The Snow Queen "," The Real Princess "];
+
+var allBooks = julesVerne.concat(alexandreDumas + hansAndersen);
+allBooks.splice( [0], [3], "3 Musketeers", "The Mysterious Island");
+
+document.getElementById("books").style.color = "green";
+document.getElementById("books").style.fontSize = "2.5em";
+document.getElementById("books").style.border = "thick solid salmon";
+document.getElementById("books").style.backgroundColor = "yellow";
+document.getElementById("books").style.padding = "20px 20px 20px 20px";
+document.getElementById("books").style.width = "50%";
+document.getElementById("books").innerHTML = (allBooks);
+
+document.getElementById("dumas").innerHTML = (alexandreDumas);
+
+</script>
+</body>
+</html>

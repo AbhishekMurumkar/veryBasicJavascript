@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Javaascript </title>
+</head>
+<h1> Sort() </h1>
+
+<style>
+ul {
+    list-style-position: inside;
+	font-size: 15px;
+	color: green;
+}
+
+p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+	    margin-left: 70px;
+}
+</style>
+
+<body>
+
+
+
+
+<script>
+var julesVerne = ["The Steam House ", " Around the World in Eighty Days ", " The Vanished Diamond "];
+var alexandreDumas =[" Catherine Blum ", " Robin Hood ", "The Black Tulip "];
+var hansAndersen = [" The Chrysanthemum Robe "," Daughter of the Forest "," The Snow Queen "," The Real Princess "];
+
+var allBooks = julesVerne.concat(alexandreDumas + hansAndersen);
+
+
+alert("Reversed book titles " + allBooks.reverse());
+alert("Sorted book titles " + allBooks.sort());
+
+alert("Pop() " + allBooks.pop());
+allBooks.pop();
+document.write (allBooks.sort());
+</script>
+</body>
+</html>
