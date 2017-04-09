@@ -21,3 +21,24 @@ var greetMe = function () {
   console.log ('Hi Tony');
 }
 greetMe();
+
+
+
+
+function product (a, b){
+  return a * b;
+}
+alert (product(3, 3));
+
+ 
+
+
+function test (a, b) {
+    alert(a);
+  alert(b);
+}
+
+test(3, 6);
+
+
+
