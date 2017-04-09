@@ -1,0 +1,13 @@
+function fromHex (a, b, c) {
+  //i want to return a 
+  //create an empty array
+  var result = [];
+  for (var i = 0; i < 3; i++){
+    result[i]=parseInt(arguments[i], 16);
+  }
+  //after the loop is over
+  return result;
+  
+}
+
+console.log(fromHex("ff3333", "ueeuueue", "34343434343"));
