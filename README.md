@@ -10,3 +10,10 @@ null
 
 to check the datatype go to console and type typeof(20);
 you should see numbers
+
+for loop  is effective with array loop
+for loop has 3 stages : initialization, condtion; increment
+then a statement is generated
+
+
+
