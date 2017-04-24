@@ -1,0 +1,7 @@
+function greatFriends(){
+  var friends = ["Mark", "Jason", "Alex", "Stacy"];
+  for (var i = 0; i<friends.length; i++){
+  console.log(friends[i]);
+}
+}
+greatFriends();
