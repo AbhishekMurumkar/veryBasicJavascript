@@ -17,3 +17,4 @@ then a statement is generated
 
 
 
+for loop is used when you know how many time does the loop needs to run
