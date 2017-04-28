@@ -44,3 +44,25 @@ var character = {
         }
 
         var choice = window.prompt("The brave adventure " + character.characterClass + " " + character.name + " enter the cabin.").toLowerCase();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end 
+if (outcome === "lose") {
+    window.alert("You lose!");
+} else if (outcome === "win") {
+    window.alert("You win!");
+}
