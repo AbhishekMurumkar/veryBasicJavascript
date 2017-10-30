@@ -1,44 +1,37 @@
-//invoke a function  - call or run a function
-//functions are first class
-
-//function statement
-
-function greet() {
-  console.log('Hi this is from function greet');
+function myFunc(){
+  console.log("hi");
 }
-greet();
-
-
-function logGreet(fn) {
-fn();
-}
-logGreet (greet);
-
-
-//function expression
-
-var greetMe = function () {
-  console.log ('Hi Tony');
-}
-greetMe();
+//call myFunc
+myFunc();
 
 
 
-
-function product (a, b){
+function myFunc(a, b){
   return a * b;
 }
-alert (product(3, 3));
+var fun = myFunc(8,9);
+console.log(fun);
 
- 
 
 
-function test (a, b) {
-    alert(a);
-  alert(b);
+var add3  = function (a, b){
+  return a - b;
 }
-
-test(3, 6);
-
+console.log(add3(5, 8));
 
 
+
+var x = 2;
+function numberLog (){
+  return x;
+}  
+console.log(numberLog());
+//output 2 
+
+var x = 2;
+function numberLog (){
+  var x = 34;
+  return x;
+}  
+console.log(numberLog());
+//output 34
