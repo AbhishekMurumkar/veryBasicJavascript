@@ -16,11 +16,9 @@ console.log(n.join(','));
 
 
 
-Solution #2
+//Solution #2
 const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 112, 113].filter((number) => number%2==0);
  console.log(n);
-
-
 
  //output
  [2, 4, 6, 8, 10, 100, 112]
