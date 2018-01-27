@@ -1,3 +1,32 @@
+//problem 
+//list all nums even and odd 
+//depending on if they are 
+//even or odd until interger 10
+
+var num = 0;
+
+while (num <=10){
+  if (num % 2 === 0){
+    console.log(num + " is even");
+  }else{
+    console.log(num + " is odd");
+  }
+num = num + 1;
+}
+
+//for - initialization statement, gets executed once before the loop
+//continuation condition, checked each time before executing the body
+//++ update statement, executed each time the loop body ends
+//code within {} the loop body executed each time the continuation condition is true
+
+//for loop method
+for (num = 0; num<=50; num++){
+  if (num % 2 === 0){
+    console.log(num + " is even");
+  }else{
+    console.log(num + " is odd");
+  }
+}; 
 for (var i = 0; i<10; i++){
 document.write('number ' + i + " " + "<br/>")
 }
