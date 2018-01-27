@@ -20,7 +20,12 @@ num = num + 1;
 //code within {} the loop body executed each time the continuation condition is true
 
 //for loop method
-for (num = 0; num<=50; num++){
+//print all the multiples of 3
+//smaler than 100
+
+for (count = 0; count<=30; count=count+3){
+    console.log(count + " is divideable")
+}for (num = 0; num<=50; num++){
   if (num % 2 === 0){
     console.log(num + " is even");
   }else{
@@ -73,3 +78,11 @@ for (count = 0; count<=30; count++){
   }
 }
 
+
+//solution 2 
+//print all the multiples of 3
+//smaler than 100
+
+for (count = 0; count<=30; count=count+3){
+    console.log(count + " is divideable")
+}
