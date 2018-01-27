@@ -8,3 +8,19 @@ var sumFirstOneHundred = function (){
 }
 console.log(sumFirstOneHundred());
 //output 5050
+
+
+var largestDiv = function (number) {
+  var result = 1;
+  var current;
+  
+  for (current = 2; current < number; current = current +1){
+    if (number%current ===0){
+      result = current;
+    }
+  }
+  return result;
+};
+console.log(largestDiv(100));
+
+jules gems
