@@ -1,4 +1,4 @@
-//problem 
+///problem 
 //list all nums even and odd 
 //depending on if they are 
 //even or odd until interger 10
@@ -50,5 +50,26 @@ for (i in people) {
 //this for loop does not limit the number of items in the array
 for (i=0; i<people.length; i++){
   document.write(people[i]+'<br/>');
+}
+
+
+
+//problme 1
+//print the first 100 intergers
+//step 1 declare var count
+var count;
+
+//step 2  write a loop
+for (count = 0; count <=100 ; count++){
+  console.log(count);
+}
+
+//print all the multiples of 3
+//smaler than 30
+
+for (count = 0; count<=30; count++){
+  if(count%3 ===0){
+    console.log(count + " s divideable")
+  }
 }
 
