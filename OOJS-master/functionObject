@@ -1,0 +1,22 @@
+//function that creates an object 
+//Lets say you need to build 50 employees using the same properties.
+//the optimal solution is make a function 
+//then create an empty object with curly braces
+//then we need to populate the empty objects with properties and values.
+//and pass the data as an argument
+
+function createEmployeeObject(fName, lName, gender, age, location){
+  var newObject = {};
+      newObject.fName = fName;
+      newObject.lName = lName;
+      newObject.gender = gender;
+      newObject.location = location;
+      newObject.age = 23;
+  return newObject;
+  
+}
+
+var employee1 = createEmployeeObject("Joshua", "Collins", "M", "Las Vegas", 23);
+console.log(employee1);
+
+

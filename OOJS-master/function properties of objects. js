@@ -1,0 +1,17 @@
+function properties of objects
+
+/*
+function properties of objects
+*/
+
+var cart = { subtotal: function(){  return 0; }};
+cart.subtotal();
+var cart = { customer: "Judy", subtotal: function() {  console.log('subtotal called for ' + this.customer);  return 0; }}
+//invoke a functioncart.subtotal();
+var cart2 = { customer: "Josh", subtotal: cart.subtotal}
+//for Judycart.subtotal();
+//call cart2 for Joshcart2.subtotal();
+var subtotalAlone = cart.subtotal;console.log(subtotalAlone === cart.subtotal);//true
+//subtootal undefinedsubtotalAlone();
+var customer = "Global John";subtotalAlone()//not recommended
+//rules of a thumb//if you use this in a function//function should be invoked as a method

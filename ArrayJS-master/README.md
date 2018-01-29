@@ -1,0 +1,1 @@
+your basicArray in Javascript
