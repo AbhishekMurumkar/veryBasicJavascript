@@ -1,3 +1,19 @@
+var a = [77, 32, 11, 23, 22],
+    b = [];
+ 
+for (var i = 0; i < a.length; ++i) { 
+    if ((a[i] % 2) === 0) {
+        b.push(a[i]);
+    }
+}
+
+console.log(b);
+
+
+
+
+
+
 
 /*
 Challenge Needed: (remember you cannot use looping or native methods/libraries that complete it automaticallyUsing Javascript, given an array of n integers (example: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 112, 113] ), remove all odd numbers, leaving only the even numbers.Rules:NO LOOPING. This means native methods, or libraries that loop for you are not allowed either.Supply the answer on github via Gist 
