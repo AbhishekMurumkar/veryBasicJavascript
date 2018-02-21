@@ -1,0 +1,14 @@
+function checkPalindrome(inputString) {
+
+
+var string = inputString.split('').reverse().join('');
+//assign a var to a string that is SPLIT, REVERESED then Joined again
+
+if(inputString == string){
+//if inputString the same as string var then it is palidrome
+
+return true;
+}else {
+return false;
+}
+}
