@@ -1,0 +1,29 @@
+var speak = function(sayWhat) {
+console.log(sayWhat);
+}
+
+var Dog = function () {
+var name, breed;
+}
+
+//add other objects
+var Cat = function(){
+var name, breed;
+}
+
+
+Dog.prototype.speak = speak;
+Cat.prototype.speak = speak;
+
+firstCat = new Cat;
+firstCat.name = "Liz";
+firstCat.breed = "bengal";
+firstCat.speak(firstCat.name + " says " + 'meaw');
+
+
+firstDog = new Dog;
+firstDog.name = "Finky";
+firstDog.breed= "German shepherd";
+firstDog.speak(firstDog.name + " says " + 'woof');
+
+//multiple object can inherit 
