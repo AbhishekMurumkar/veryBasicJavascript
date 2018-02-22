@@ -1,0 +1,23 @@
+//invoke through call and apply
+
+
+var speak = function(what){
+
+console.log(what);
+//console.log(this.love);
+//console.log(this.normal);
+}
+
+//console.log(speak("HI!"));
+
+//call passes a value
+//apply passes and array
+
+
+var saySomething = { normal : "meaw", love: "purr"}
+//speak.call(saySomething);
+speak.apply (saySomething, ['meowff']);
+
+
+//speak.call (saySomething, saySomething.normal);
+//speak.apply (saySomething, ['meowff']);
