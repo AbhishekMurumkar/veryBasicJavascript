@@ -1,3 +1,10 @@
+for (var i = 0; i <= 3; i++) {
+    (function(index) {
+        setTimeout(function() { console.log(index); }, i * 10000);
+    })(i);
+}
+
+
 for (var i = 0; i < 5; i++) 
 {  (function (i) 
 {    setTimeout(function () 
