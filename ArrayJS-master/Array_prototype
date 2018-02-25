@@ -1,0 +1,10 @@
+Array.prototype.house = function() {
+    for (i = 0; i < this.length; i++) {
+        this[i] = this[i].toUpperCase();
+    }
+}; 
+
+
+var myHouse = ["tv", "books", "couch"];
+myHouse.house(); 
+console.log(myHouse);
