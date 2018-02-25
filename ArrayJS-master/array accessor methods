@@ -1,0 +1,71 @@
+Array.prototype.house = function() {
+
+    for (i = 0; i < this.length; i++) {
+
+        this[i] = this[i].toUpperCase();     
+
+    }
+
+}; 
+
+
+
+
+
+var myHouse = ["tv", "books", "couch", "lamp", "pillow", "desk", "movies", "playstation", "fridge"];
+
+myHouse.house(); 
+
+console.log(myHouse);
+
+
+
+console.log("this is pop " + myHouse.pop());
+
+//console.log("this is fill " + myHouse.fill
+
+//("bed"));
+
+
+
+
+
+console.log("this is push " + myHouse.push("chair"));
+
+console.log(myHouse);
+
+
+
+
+
+console.log("this is reverse " + myHouse.reverse());
+
+console.log(myHouse);
+
+
+
+console.log("this is shift " + myHouse.shift());
+
+console.log(myHouse);
+
+
+
+console.log("this is sort " + myHouse.sort());
+
+console.log(myHouse);
+
+
+
+var animals = ["cat", "dog", "horse"];
+
+console.log(myHouse.concat(animals));
+
+
+
+
+
+console.log(myHouse);
+
+console.log(myHouse.includes("cat"));
+
+console.log(myHouse.includes("COUCH") ||myHouse.includes("couch"));
