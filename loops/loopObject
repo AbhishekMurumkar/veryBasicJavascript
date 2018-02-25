@@ -1,0 +1,42 @@
+
+
+function Person (name, weight, age)
+{
+this.name = name;
+this.weight = weight;
+this.age = age;
+}
+
+var ana = new Person ("Anna", 160, 30);
+var steve = new Person ("Steve", 190, 23);
+var michael = new Person ("Michael", 100,21);
+
+/*
+var array2 = [ana.weight, steve.weight, michael.weight ];
+function averageWeight(array2) {
+    var output = 0;
+    var ave = 0;
+    for (var i = 0; i < array2.length ; i++) {
+        output += array2[i];
+    }
+    ave = output / array2.length;
+    console.log(ave);
+}
+averageWeight(array2);
+*/
+
+
+var array3 = [ana, steve, michael];
+console.log(array3);
+
+function averageWeight(array3) {
+    var output = 0;
+    var ave = 0;
+
+    for (var i = 0; i < array3.length ; i++) {
+        output += array3[i].weight;
+    }
+    ave = output / array3.length;
+    console.log(ave);
+}
+averageWeight(array3);
