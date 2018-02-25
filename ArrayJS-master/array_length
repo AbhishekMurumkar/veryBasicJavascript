@@ -1,0 +1,3 @@
+var house = ['books', 'sofa', 'tv', 'bookshelf'];
+
+console.log(house.length);
