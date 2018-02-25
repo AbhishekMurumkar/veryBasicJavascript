@@ -1,0 +1,12 @@
+function doubleNum () {
+var array1 = [3, 5, 7, 10 , 12, 14];
+var output = [];
+
+for ( var i = 0; i < array1.length; i++){
+if (array1[i] % 2 == 0) {
+output.push(array1[i]);
+}
+console.log(output);
+}
+}
+console.log(doubleNum());
