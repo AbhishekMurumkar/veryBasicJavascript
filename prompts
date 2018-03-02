@@ -1,0 +1,7 @@
+
+var name = prompt ("what is your name?", "");
+if (name === "Steve"){
+alert(name + " is right")}
+else{
+alert(name + " is not rightful owner");
+} 
