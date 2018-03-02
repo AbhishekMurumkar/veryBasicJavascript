@@ -1,0 +1,3 @@
+var age = prompt ("enter number", "");
+var age = (age > 20) ? "you are older than 20" : "you are younger than 20" ;
+alert(age);
