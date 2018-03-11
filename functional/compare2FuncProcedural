@@ -1,0 +1,20 @@
+var _ = require("lodash");
+
+
+numbers = [ 90, 22, 33, 11];
+for(var i=0; i<numbers.length; i++){
+    numbers[i]= numbers[i] * numbers[i];
+}
+console.log(numbers);
+
+
+numbers2 = [ 90, 22, 33, 11];
+var numbersSquared = _.map(numbers2, function(x){
+    return x*x;
+})
+console.log(numbersSquared);
+
+
+output for both
+[ 8100, 484, 1089, 121 ]
+[ 8100, 484, 1089, 121 ]
