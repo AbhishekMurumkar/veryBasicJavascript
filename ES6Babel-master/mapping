@@ -1,0 +1,20 @@
+
+//mapping - map does not change the original array but a new var has to be assigned
+
+var number = [1, 2, 3, 4, 6]
+var cloudNum = []
+
+for(var i = 0; i<number.legth; i++){
+var element = numbers [i]
+cloudNum.push(element * element * element);
+console.log(cloudNum)
+}
+
+var _ = require ('lodash')
+
+var numbers = [ 20, 23, 33]
+var numClub = _.map(numbers, function(element) {
+return element*element*element
+})
+
+console.log(numClub);
