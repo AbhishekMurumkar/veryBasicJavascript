@@ -1,0 +1,15 @@
+Given the following ES6 script:
+const run = true;
+let name = 'bob';
+if (run) {
+    let name = 'charley'
+    console.log(name);
+}
+console.log(name);
+
+what is printed to the console?
+
+
+the second declaration of let inside the if 
+statement is bound to the block scope of the if; therefore, 
+it will not overwrite the original 'name' defined above it. 

@@ -1,0 +1,23 @@
+Given the following ES6 script
+const MAX = 5;
+ 
+for (var i = 0; i < MAX; i++) {
+  setTimeout(function() {
+    console.log(i);
+  });
+}
+ 
+for (let i = 0; i < MAX; i++) {
+  setTimeout(function() {
+    console.log(i);
+  });
+}
+what will print to the console?
+
+
+
+We'd typically use a IIFE to make the first for loop work as excepted, 
+but now we can simply use let in the block scope to bind the value of i during each iteration 
+
+//output 55555
+//12345

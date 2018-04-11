@@ -1,0 +1,6 @@
+Given the following ES6 script
+console.log(x);
+const x = 0;
+what will print to the console?
+
+reference error 

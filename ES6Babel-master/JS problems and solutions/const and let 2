@@ -1,0 +1,13 @@
+Given the following ES6 script:
+const MAX = 10;
+let amount = 0;
+while (amount++ < MAX) {
+  let sum = amount;
+}
+console.log(sum);
+what is printed to the console?
+
+//error reference error
+
+The variable 'sum' is only declared inside of the while loops block scope; 
+therefore, we don't have any access to a 'sum' variable outside of it where the console log is ran. 
