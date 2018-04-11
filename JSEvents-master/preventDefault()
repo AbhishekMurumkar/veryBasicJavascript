@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<ul id="grid">
+<li><a href="#home" alt="1" id="pink">pink</li>
+<li><a href="#home" alt="7" id="black">black</li>
+
+</ul>
+</body>
+</html>
+
+
+
+//js
+
+document.getElementById('grid').addEventListener('click', function(e){
+e.preventDefault();
+console.log("clicked inside");
+}, false);
+
+
+document.getElementById('pink').addEventListener('click', function(e){
+e.preventDefault();
+console.log("clicked on pink");
+e.stopPropagation();
+}, false);

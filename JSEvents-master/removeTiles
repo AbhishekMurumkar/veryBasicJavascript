@@ -1,0 +1,20 @@
+
+document.querySelector('.grid').addEventListener('click', function(e) {
+//now we need to get JS to be set up if a user 
+//clicks on the imgage it will only //execute an image
+if(e.target.tagName === 'IMG'){
+
+        //set up var to track down the number of Li's left
+        var howmany = this.querySelectorAll('li').length;
+        console.log(this);
+    
+   if(howmany > 1){
+        var removeTarget = e.target.parentNode;
+        removeTarget.parentNode.removeChild();
+   } else {
+     var photoTitle = e.target.alt;
+     document.querySelector('#art p').innerHTML = "<p> you picked" + photoTitle + "</p>";
+   } //howmany
+
+   } //click to see that i clicked only IMG
+}, false); //click event

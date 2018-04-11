@@ -1,0 +1,44 @@
+/////ie 9 and newer
+
+document.getElementById('pink').addEventListener('click', function(){
+alert('click on pink');
+}, false);
+
+////older browsers
+document.getElementById('pink').attachEvent('onclick', function() {
+alert('click on pink');
+});
+
+
+///cross platform example
+
+if (window.addEventListener){
+document.getElementById('pink').addEventListener('click', function(){
+      alert('click on pink');
+      console.log('addEventListener');
+  }, false);
+} else if (window.attachEvent) {
+document.getElementById('pink').attachEvent('onclick', function() {
+  alert('click on pink');
+  console.log('attachEvent');
+});
+}
+
+
+/////jquery
+
+$('#pink').on('click', function(event) {
+  alert('click on pink');
+  });
+  
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<ul id="grid">
+<li><a href="#home" alt="1" id="pink">pink</li>
+<li><a href="#home" alt="7" >black</li>
+<li><a href="#home" alt="5">lilac</li>
+<li><a href="#home" alt="55">purple</li>
+<li><a href="#home" alt="12">orange</li>
+<li><a href="#home" alt="13">red</li>
+</ul>
+</body>
+</html>
+
+
+//stoppropagation() will trigger only "clicked on pink" vs clicked inside then clicked on pink 
+
+document.getElementById('grid').addEventListener('click', function(e){
+console.log("clicked inside");
+}, false);
+
+
+document.getElementById('pink').addEventListener('click', function(e){
+console.log("clicked on pink");
+e.stopPropagation();
+}, false);
+
