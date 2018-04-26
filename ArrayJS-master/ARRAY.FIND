@@ -1,0 +1,15 @@
+const people = [{
+name: "Andrew", 
+age: 30
+},
+{
+name: "Becky", 
+age: 31
+},
+{
+name: "Tim",
+age:34
+}]
+
+const personFind = people.find((personFind) => personFind.age === 30)
+console.log(personFind.name);
