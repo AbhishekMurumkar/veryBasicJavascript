@@ -1,0 +1,28 @@
+const people = [{
+
+name: "Andrew", 
+age: 30
+},
+{
+name: "Becky", 
+age: 31
+},
+{
+name: "Tim",
+age:34,
+}]
+
+const under32 = people.filter((person)=> person.age<32)
+console.log(under32);
+
+
+Console 
+Clear 
+
+[[object Object] {
+  age: 30,
+  name: "Andrew"
+}, [object Object] {
+  age: 31,
+  name: "Becky"
+}]
